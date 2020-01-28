@@ -1,0 +1,702 @@
+/*
+=====================================
+   public style
+=====================================
+*/
+* , *::after ,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    direction: ltr;
+    overflow-x: hidden;
+}
+.clear-fix{
+    clear: both;
+}
+.fixed-top {
+    background: #ffffff;
+    box-shadow: 0 0 2px 3px rgba(59, 59, 59, 0.2);
+}
+
+.bg-light {
+    background: #fff7ff !important;
+    color: #fff;
+}
+
+/*
+=====================================
+  navbar style
+=====================================
+*/
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+    color: #03a9f4;
+    background: transparent;
+    border-color: #03a9f4;
+    border-bottom: 3px solid;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link{
+    margin-left: 80px;
+    padding: 9px 0;
+    margin-bottom: -1px;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 3px solid;
+    transition:all .5s ease-out ;
+    border-color: #03a9f4;
+    color: #03a9f4;
+}
+
+@media(max-width:991px){
+    .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+            color: #03a9f4;
+            border: 0;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+            border: 0;
+            color: #03a9f4;
+    }
+}
+/*
+=====================================
+   sliderstyle
+=====================================
+*/
+.carousel-item.active{
+    background-image: url(../image/slider/slider-1-1920x900.jpg);
+    background-size:cover ;
+    height: 800px;
+    width: 100%;
+    background-size: cover; 
+    background-position: center center;
+    position: relative;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 45%;
+    bottom: 20px;
+    left: 10%;
+    top: 23%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+} 
+.carousel-caption h5{
+    font-size: 50px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+.carousel-caption p{
+    font-size: 40px;
+    color: black;
+    word-spacing: 5px;
+    margin-left: 17%;
+
+    
+}
+.carousel-caption .btn.btn-primary{
+    border-radius: 40px;
+    border: 0;
+    width: 50%;
+    background:  #03a9f4;
+    padding: 10px 0;
+   
+    word-spacing: 5px;
+    transition: all .6s ease-in-out;
+}
+.carousel-caption .btn .btn-primary:hover{
+    background: #faa62a;
+}
+@media(max-width:991px){
+    .carousel-item.active{
+            background-image: url(../image/slider/slider-1-1920x900.jpg);
+            height: 700px;
+            background-size: cover; 
+            background-position: center right;
+            position: relative;
+    }
+   
+   
+    .carousel-caption {
+            text-align: center;
+            right: 15%;
+            bottom: 20px;
+            left: 10%;
+            top: 40%;
+
+    }
+    .carousel-caption h5{
+            font-size: 30px !important;
+            color: #5f5c5c;
+            font-family: 'Lobster', cursive;
+    }
+    .carousel-caption p{
+            font-size: 20px !important; 
+            color: #8d8a8a;
+            word-spacing: 5px;
+    }
+    .carousel-caption h5 {
+            color: rgb(34, 31, 31);
+    }
+    .carousel-caption p {
+            color: rgb(39, 36, 36);
+    }
+}
+/*
+=====================================
+   four Div  style
+=====================================
+*/
+.four-Div .four-Div-1{
+    background: #03a9f4;
+    color: #fff;
+    padding: 20px 50px ;
+    height: 230px;
+}
+.four-Div .four-Div-2{
+    background: #8bc34a;
+    color: #fff;
+    padding: 20px 40px;
+    height: 230px;
+}
+.four-Div .four-Div-3{
+    background: #ffa726;
+    color: #fff;
+    padding: 20px 40px;
+    height: 230px;
+}
+.four-Div .four-Div-4{
+    background: #f44336;
+    color: #fff;
+    padding: 5px 30px;
+    height: 230px;
+}
+.four-Div .four-Div-1 .icon-font{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.four-Div .four-Div-2 .icon-font{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.four-Div .four-Div-3 .icon-font{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.four-Div .four-Div-4 .titel-four-Div{
+    color: rgb(219, 215, 215);
+    font-family: 'Public Sans', sans-serif;
+    font-size: 30px;
+} 
+.four-Div .four-Div-1 .titel-four-Div{
+    font-size: 25px;
+}
+.four-Div .four-Div-2 .titel-four-Div{
+    font-size: 25px;
+}
+.four-Div .four-Div-3 .titel-four-Div{
+    font-size: 25px;
+}
+.four-Div .four-Div-1 p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+}
+.four-Div .four-Div-2 p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+}
+.four-Div .four-Div-3 p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+}
+.four-Div .four-Div-4 p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+
+}
+.four-Div .four-Div-4 .btn.btn-danger{
+    border-radius: 40px;
+    width: 100%;
+    border: 2px solid #fff;
+    background: #f44336;
+  
+    transition: all .6s ease-in-out;
+    letter-spacing: 2px;
+}
+.four-Div .four-Div-4 .btn.btn-danger:hover{
+    background: #03a9f4;
+    letter-spacing: 2px;
+}
+/*
+=====================================
+  we-Offerstyle
+=====================================
+*/
+.we-Offer{
+    text-align: center;
+    font-family: 'Public Sans', sans-serif;
+}
+.we-Offer .we-Offer-hiding{
+    padding: 90px 0;
+}
+.we-Offer .we-Offer-hiding .we-Offer-hiding-titel{
+    font-size: 39px;
+}
+.we-Offer .we-Offer-hiding p{
+    font-size: 20px;
+    color: #777;
+}
+.we-Offer .Group {
+    margin-bottom: 50px;
+}
+.we-Offer .Group .Group-icon{
+    font-size: 46px;
+    color: #03a9f4;
+    margin-bottom: 20px;
+}
+.we-Offer .Group .Group-titel{
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+}
+.we-Offer .Group p{
+    font-size: 18px;
+    color: rgb(153, 143, 143);
+    font-weight: bold;
+}
+
+/*
+=====================================
+  Our-Programs style
+=====================================
+*/
+.Our-Programs{
+    background-image: url(../image/background/home-bg-1-1920x770.jpg);
+    height: auto;
+    background-size: cover; 
+    background-position: center right;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 10px;
+}
+.Our-Programs .Our-Programs-hiding-titel{
+    text-align: center;
+    padding: 90px 0;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.Our-Programs .program .card-link.titel{
+    font-weight: 500;
+    color: #8bc34a;
+    font-family: 'Raleway', sans-serif;
+    transition: all .5s ease-in;
+}
+.Our-Programs .program{
+    margin-bottom: 15px;
+}
+.Our-Programs .program .card-link.titel:hover{
+    color: #03a9f4;
+}
+.card-link + .card-link {
+    margin-left: 0.25rem;
+}
+.program .card{
+    overflow: hidden;
+    transition: all .8s ease-in;
+    text-align: left;
+    
+}
+.program .card:hover img {
+    transform: scale(1.1);
+    transition: all  .5s ease-in-out;
+}
+.program .card .card-text{
+    color: #828590;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.Our-Programs .program .card .card-link.Teacher{
+    color: #828590;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.Our-Programs .program .card .card-link{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    transition: all  .5s ease-in-out;
+}
+.Our-Programs .program .card .card-link:hover{
+    color: #8bc34a;
+}
+@media(max-width:768px){
+    .Our-Programs .program{
+            margin-bottom: 15px;
+            transform: translateX(-20%);
+    }
+}
+
+/*
+=====================================
+  Questions style
+=====================================
+*/
+.Questions{
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 100px 0;
+}
+.Questions .Questions-hiding .Questions-hiding-titel{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.Questions .media{
+    border-left: 1px solid #e7e7eb;
+    padding: 0 40px;
+}
+.Questions .media .titel{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #29293a;
+    letter-spacing: 0;
+
+}
+.Questions .media {
+    color: #828590;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.Questions .baten2{
+    text-align: center;
+    margin-top: 50px;
+}
+.Questions .baten2 .btn{
+    border-radius: 40px;
+    border: 0;
+    width: 30%;
+    background: #03a9f4;
+    padding: 10px 0;
+   
+    word-spacing: 5px;
+    transition: all .6s ease-in-out;
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.Questions .baten2 .btn:hover{
+    background: #faa62a;
+}
+@media(max-width:991px){
+    .Questions .baten2 .btn{
+            border-radius: 40px;
+            border: 0;
+            width: 60%;
+            background: #03a9f4;
+            padding: 10px 0;
+            font-family: 'Lobster', cursive;
+            word-spacing: 5px;
+            transition: all .6s ease-in-out;
+            margin-top: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+    }
+    .Questions .baten2 .btn:hover{
+            background: #faa62a;
+    }
+}
+/*
+=====================================
+  Footer style
+=====================================
+*/
+.Footer{
+    background:#151515;
+    padding: 50px;
+}
+.Footer .footer-logo{
+    margin-bottom: 40px;
+}
+.Footer .footer-logo img{
+    width: 70%;
+}
+.Footer .footer-dec{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+.Footer .footer-dec-2{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 17px;
+}
+.Footer .footer-dec-2 a{
+    color: rgba(255, 255, 255, 0.3);
+    transition: all .5s ease-in;
+}
+.Footer .footer-dec-2 a:hover{
+    text-decoration: none;
+    color: #03a9f4;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background:#151515;
+    border:0;
+}
+.footer-titel{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+.Footer .footer-list .footer-item{
+    list-style: none;
+    margin-bottom: 10px;
+    color: #03a9f4;
+    text-align: left;
+
+}
+.Footer .footer-list .footer-item a{
+    color: #fff;
+    transition: all .5s ease-in;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.Footer .footer-list .footer-item a:hover{
+    color: #03a9f4;
+    text-decoration: none;
+}
+
+.list-group-horizontal .list-group-item a{
+    margin-left: -20px;
+    margin-bottom: 0;
+    color: #a3a2a2;
+}
+.list-group-horizontal .list-group-item a:hover{
+    color: #03a9f4;
+}
+.list-group-horizontal .list-group-item {
+    margin-right: -19px;
+    margin-bottom: 0;
+    margin-top: -20px;
+}
+.footer-gallery{
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer-gallery img{
+    transition: 1s;
+    margin-bottom: 6px;
+}
+.footer-gallery img:hover{
+    filter:grayscale(100%);
+    transform: scale(1.1);
+}
+.footer-form input{
+    height: 35px;
+    border: 0;
+}
+.form-control {
+    font-size: 13px;
+    font-weight: 100;
+}
+.footer-form .btn{
+    background: #03a9f4;
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 1s;
+   
+    letter-spacing: 1px;
+    width: 50%;
+}
+.footer-form .btn:hover{
+    background: #faa62a;
+}
+/*
+=====================================
+  Button Top style
+=====================================
+*/
+#back-to-top-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 50%;
+    background: #03a9f4;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(145, 159, 204, 0.315);
+    cursor: pointer;
+    transition: all .5s ease-in;
+    z-index: 10;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus{
+    background: #8bc34a;
+}
+@media(max-width:992px){
+    #back-to-top-btn{
+            font-size: 22px;
+            width: 40px;
+            height: 40px;
+    }
+}
+@media(max-width:768px){
+    #back-to-top-btn{
+            font-size: 18px;
+            width: 32px;
+            height: 32px;
+            right: 10px;
+            bottom: 10px;
+    }
+}
+.btnEntrance{
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+@keyframes btnEntrance{
+    from{
+            opacity: 0;
+            transform: scale3d(0.3, 0.3, 03);
+    }
+    to{
+            opacity: 1;
+    }
+}
+.btnExit{
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+/*
+=====================================
+  Single-Program style
+=====================================
+*/
+.Single-Program{
+    background-image: url("../image/background/home-bg-1-1920x770.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    transform: translateY(14%);
+    position: relative;
+}
+.Single-Program .heder-Program-titel{
+    position: absolute;
+    top: 160px;
+    color: #fff;
+    line-height: 1.1;
+}
+.Single-Program .heder-Program-titel .titel{
+    font-size: 57px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 100;
+}
+.Single-Program .heder-Program-titel .nav{
+    transform: translateY(170%);
+
+}
+.Single-Program .heder-Program-titel .nav .nav-item a{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 300;
+    transition: all .5s ease-in;
+}
+.Single-Program .heder-Program-titel .nav .nav-item a:hover{
+    color: #5f5c5c;
+}
+.programin .Preschool-bten .btn{
+    background: #03a9f4;
+}
+.programin .Preschool-bten .btn:hover{
+    background: #fff;
+}
+@media(max-width:768px){
+    .Single-Program .heder-Program-titel .titel{
+            font-size: 40px;
+    }
+    .Single-Program .heder-Program-titel .nav li{
+            transform: translateY(-10%);
+    }
+}
+
+/*
+=====================================
+  InFoerm style
+=====================================
+*/
+.InFoerm{
+    background: #f3f3f9;
+    padding: 30px;
+}
+.InFoerm .form{
+    text-align: center;
+    margin:100px auto;
+}
+.InFoerm .form input{
+    width: 50%;
+    height: 47px;
+    padding-left: 20px;
+    border-radius: 40px;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    color: #777;
+}
+.InFoerm .form textarea{
+    width: 50%;
+    padding: 30px;
+    border-radius: 40px;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    color: #777;
+}
+.InFoerm .form button{
+    width: 30%;
+    border-radius: 30px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+.InFoerm .form button:hover{
+    background: #faa62a;
+}
+@media(max-width:992px){
+    .InFoerm .form input{
+            width: 100%;
+    }
+    .InFoerm .form textarea{
+            width: 100%;
+    }
+    .InFoerm .form button{
+            width: 70%;
+    }
+}
